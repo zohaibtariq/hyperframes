@@ -1,7 +1,7 @@
 {
   "name": "@hyperframes/gcp-cloud-run",
   "version": "0.9.5",
-  "description": "Google Cloud Run + Workflows adapter for HyperFrames distributed rendering — request handler, client-side SDK, and Terraform module.",
+  "description": "Google Cloud Run + Workflows adapter for HyperFrames distributed rendering \u2014 request handler, client-side SDK, and Terraform module.",
   "repository": {
     "type": "git",
     "url": "https://github.com/heygen-com/hyperframes",
@@ -62,8 +62,8 @@
   },
   "scripts": {
     "test:dockerfile-workspaces": "node check-dockerfile-workspaces.mjs",
-    "build": "node build.mjs",
-    "start": "bun dist/server.js",
+    "build": "node init && node build.mjs",
+    "start": "node init && bun dist/server.js",
     "test": "bun test",
     "typecheck": "tsc --noEmit"
   },

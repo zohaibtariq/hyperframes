@@ -36,7 +36,7 @@
     "types": "./dist/index.d.ts"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "node init && tsup",
     "typecheck": "tsc --noEmit",
     "test": "vitest run --passWithNoTests"
   },
