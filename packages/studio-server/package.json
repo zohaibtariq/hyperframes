@@ -185,7 +185,7 @@
     "types": "./dist/index.d.ts"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "node init && tsup",
     "test": "vitest run",
     "test:acorn-writer": "bun scripts/run-acorn-writer-tests.ts",
     "test:watch": "vitest",

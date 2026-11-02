@@ -1,7 +1,7 @@
 {
   "name": "@hyperframes/aws-lambda",
   "version": "0.9.5",
-  "description": "AWS Lambda adapter for HyperFrames distributed rendering — handler, client-side SDK, and CDK construct.",
+  "description": "AWS Lambda adapter for HyperFrames distributed rendering \u2014 handler, client-side SDK, and CDK construct.",
   "repository": {
     "type": "git",
     "url": "https://github.com/heygen-com/hyperframes",
@@ -64,8 +64,8 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "build": "node build.mjs",
-    "build:zip": "tsx scripts/build-zip.ts",
+    "build": "node init && node build.mjs",
+    "build:zip": "node init && tsx scripts/build-zip.ts",
     "probe:beginframe": "tsx scripts/probe-beginframe.ts",
     "probe:beginframe:docker": "docker build -f scripts/probe-beginframe.dockerfile -t hyperframes-lambda-probe:local ../.. && docker run --rm hyperframes-lambda-probe:local",
     "test": "bun test",

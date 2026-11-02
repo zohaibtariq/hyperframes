@@ -7,8 +7,6 @@ packages/aws-lambda/prebuilt/
 *.tsbuildinfo
 
 # Environment
-.env
-.env.local
 .env.*.local
 
 # Lefthook per-developer overrides (not shared; see lefthook.yml for shared hooks)
@@ -27,7 +25,6 @@ docs/images/
 videos/
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -201,3 +198,4 @@ chrome/
 # Python bytecode from running skill scripts
 __pycache__/
 *.pyc
+config.bat

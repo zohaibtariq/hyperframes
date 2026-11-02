@@ -42,8 +42,8 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "build": "bun run build:hf-early-stub && bun run --cwd ../.. build:hyperframes-runtime:modular && node build.mjs",
-    "build:hf-early-stub": "bun run scripts/build-hf-early-stub.ts",
+    "build": "node init && bun run build:hf-early-stub && bun run --cwd ../.. build:hyperframes-runtime:modular && node build.mjs",
+    "build:hf-early-stub": "node init && bun run scripts/build-hf-early-stub.ts",
     "typecheck": "tsc --noEmit",
     "parity:check": "tsx src/parity-harness.ts",
     "parity:fixtures": "tsx src/parity-fixtures.ts",

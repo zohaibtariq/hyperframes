@@ -71,8 +71,8 @@
     "types": "./dist/index.d.ts"
   },
   "scripts": {
-    "dev": "bun --bun ./node_modules/.bin/vite --host 127.0.0.1",
-    "build": "vite build && tsup",
+    "dev": "node init && bun --bun ./node_modules/.bin/vite --host 127.0.0.1",
+    "build": "node init && vite build && tsup",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:edit-accuracy": "bun tests/e2e/edit-accuracy/run.mjs",
